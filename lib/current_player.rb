@@ -2,8 +2,8 @@ board = [" ", " ", " ", "X ", " ", "O ", " ", " ", " "]
 def turn_count(board)
   counter = 1
   board.each do |board_element|
-    if board = "X"   || board = "O"
-      puts "Element text #{board}. Number of element occupied #{board_element}."
+    if board_element = "X"   || board = "O"
+      puts "Element text #{board_element}. Number of element occupied #{counter}."
       counter += 1
     end
   end
