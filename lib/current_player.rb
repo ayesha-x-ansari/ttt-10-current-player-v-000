@@ -12,12 +12,14 @@ end
 
 def current_player(board)
   counter = turn_count(board)
+  puts counter
+  puts "ffffffffffffffff"
   if counter % 2 == 0
     puts "oooooooooooooooooo"
-    return "O"
+    return "X"
   else
     puts "xxxxxxxxxxxxxx"
-    return "X"
+    return "O"
   end
 end
 
