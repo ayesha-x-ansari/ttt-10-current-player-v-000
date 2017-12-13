@@ -1,4 +1,4 @@
-board = [" ", " ", " ", "X", " ", "O", " ", " ", " "]
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def turn_count(board)
   counter = 0
   board.each do |board_element|
@@ -23,4 +23,4 @@ def current_player(board)
   end
 end
 
-current_player(board)
+#current_player(board)
