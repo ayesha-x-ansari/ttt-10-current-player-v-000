@@ -4,8 +4,21 @@ def turn_count(board)
   board.each do |board_element|
     if board_element == "X" || board_element == "O"
        counter += 1
-       puts "Board elemnt is: #{board_element}. Occupied elements are #{counter}"
+       puts "Board element is: #{board_element}. Occupied elements are #{counter}"
     end
   end
+  return counter
 end
-turn_count(board)
+
+def current_player(board)
+  turn_count(board)
+  if counter % 2 == 0
+    puts "oooooooooooooooooo"
+    return "O"
+  else
+    puts "xxxxxxxxxxxxxx"
+    return "X"
+  end
+end
+
+current_player
