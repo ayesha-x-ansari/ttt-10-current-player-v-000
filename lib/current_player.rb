@@ -4,9 +4,10 @@ def turn_count(board)
   board.each do |board_element|
   #  if board[counter] = "X"
        puts "Element text #{board_element}. Number of element occupied #{counter}."
+       if board_element == "X"
        counter += 1
        puts counter
-  #  end
+    end
   end
 end
 turn_count(board)
